@@ -1,0 +1,272 @@
+/* styles.css */
+
+.navbar.bg-maroon {
+  background-color:  #1c0909; /* Maroon */
+}
+
+.navbar-brand {
+    font-size: 2.2em;
+    font-weight: bold;
+    color: white;
+    margin-left: 15px;
+    font-family: Garamond;
+    
+  }
+  .navbar-text {
+    font-size: 1.3rem;
+    color: #616161;
+    
+  }
+  .nav-link {
+    font-size: 1.1rem;
+    color: white; 
+    transition: color 0.2s;
+    font-family: Garamond;
+  }
+  .nav-link:hover {
+    color: #1c0909;
+  }
+  .navbar-light .navbar-toggler-icon {
+    background-color:  #1c0909;
+  }
+  .navbar-light .navbar-toggler {
+    border-color:  #1c0909;
+  }
+  .navbar-light .navbar-toggler:focus, .navbar-light .navbar-toggler:active {
+    outline: none;
+    box-shadow: none;
+  }
+  .navbar-light .navbar-toggler:focus .navbar-toggler-icon, .navbar-light .navbar-toggler:active .navbar-toggler-icon {
+    background-color:  #1c0909;
+  }
+  .navbar-nav {
+    margin-left: auto !important;
+   margin-right: 10px;
+
+}
+
+.navbar-nav .nav-link {
+    transition: background-color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: #eeeeee; /* Light Grey */
+}
+.navbar {
+    animation: fadeIn 0.5s ease-in-out forwards;
+    opacity: 0;
+    background-color: #b25858;
+}
+.remove-vid-marg{
+  margin: 0px;
+  padding: 0px;
+}
+.vid-parent{
+  position: relative;
+}
+video{
+width: 100% ;
+height: 100%;
+}
+.vid-overlay{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #c5c5c5;
+  /* property specifies the stack order of an element. An element with a higher z-index value will be displayed in front  */
+  z-index: 1;
+  opacity: 0.5;
+}
+.vid-content{
+  position: absolute;
+  z-index: 2;
+  top: 35%;
+  left: 35%;
+  text-align: center;
+  color: white;
+}
+.btn-custom {
+  color: #fff;
+  background-color:#1c0909; /* Maroon */
+  border-color: #1c0909; /* Maroon */
+  font-family: Garamond;
+}
+
+.btn-custom:hover {
+  background-color: #220404; /* Darker Maroon on Hover */
+  border-color: #220404; /* Darker Maroon on Hover */
+}
+/* styles.css */
+.bg-maroon.txt-banner {
+  background-color:  #1c0909; /* Maroon */
+}
+.bottom-banner{
+  color: white;
+  padding: 10px;
+  
+
+}
+a.social-hover:hover {
+  padding: 5px 100px;
+  text-decoration: none;
+  background-color: rgb(237, 233, 233);
+}
+/* .stripe {
+  background-image: linear-gradient(240deg, #ed213a, #93291e);
+  padding: 3rem;
+  height: 13rem;
+  margin-top: 4rem;
+  transform: rotate(10deg);
+  z-index: -5;
+} */
+@media screen and (min-width:0px) and (max-width:700px){
+  .mycontent,
+  .txt-banner{
+    display: none;
+  }
+  .vid-content{
+    top: 12%;
+    left: 40%;
+  }
+}
+.mycontent{
+  font-family: Garamond;
+  font-size: 35px;
+}
+.contact-form {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  border: none;
+  border-bottom: 1px solid #ced4da;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form textarea:focus {
+  border-bottom: 2px solid #1c0909;
+  box-shadow: none;
+}
+
+.contact-form button[type="submit"] {
+  background-color: #1d2022;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button[type="submit"]:hover {
+  background-color: #1c0909;
+}
+
+.card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #212529; 
+}
+
+.card-text {
+  font-size: 16px;
+  color: #6c757d; /* Gray */
+}
+
+.card-footer {
+  background-color: #f8f9fa; /* Light gray */
+  padding: 15px;
+  border-top: 1px solid #dee2e6;
+  border-radius: 0 0 10px 10px;
+}
+
+.btn-enroll {
+  background-color: #1c0909; /* Blue */
+  border-color: #1c0909;
+}
+
+.btn-enroll:hover {
+  background-color: black; /* Dark blue */
+  border-color: black;
+}
+
+.contact-box {
+  background-color: #659b96;
+  padding: 20px;
+  width: 2500px;
+  border-radius: 5px;
+  color: black;
+  text-align: center;
+}
+.contact-form  {
+  color: pink;
+}
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  color: rgb(151, 76, 89);
+}
+.contact-form button[type="submit"] {
+  background-color: pink;
+  color: black;
+  font-family: Garamond;
+  font-weight: bold;
+}
+.info-section {
+  background-color: black;
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  height: 500px;
+  width: 350px;
+  position: relative;
+  left: -30px; /* Adjust this value to your preference */
+  z-index: 0;
+}
+
+#stuRegForm {
+  
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adding a subtle shadow effect */
+}
+.form-group {
+  margin-bottom: 20px;
+}
+.form-group label {
+  color: #8B4513; /* Brown */
+  font-weight: bold;
+}
+.form-control {
+  border: 1px solid #391f0d; /* Brown */
+  border-radius: 5px;
+  padding: 10px;
+}
+.form-control:focus {
+  border-color: #391f0d; /* Darker brown on focus */
+  box-shadow: 0 0 5px rgba(210, 105, 30, 0.5); /* Adding a subtle shadow effect on focus */
+}
+.form-text {
+  color: #8B4513; /* Brown */
+}
+
